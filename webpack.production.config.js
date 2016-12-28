@@ -5,7 +5,7 @@ module.exports = {
   entry: './source/js/index.js',
   output: {
     path: './build/',
-    filename: 'js/shopping-list.js'
+    filename: 'js/app.js'
   },
   module: {
     loaders: [
@@ -14,7 +14,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel',
         query: {
-          presets: ['es2015', 'react', 'stage-2']
+          presets: ['latest', 'stage-0', 'react'],
         }
       }
     ]
